@@ -1,17 +1,17 @@
-![Cover](https://github.com/nephcode/underconstruction/blob/main/images/github/githubReadmeHeader.png)
+![Cover](https://kpkfzczpavanzocxzyta.supabase.co/storage/v1/object/public/oc-react/readme-header-oc-react-11.png)
 
 <!-- ∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴ -->
 
-# UNDERCONSTRUCTION
+# OC PROJECT 11 KASA
 
-Personal template first init
+APP REACT ROUTER WITH BUN
 
 ## PROJECT DELIVERIES
 
 | WHAT FOR               | WHEN         |
 | :--------------------- | ------------ |
-| Deadline MVP           | `18-03-2024` |
-| Deadline CERTIFICATION | `15-04-2024` |
+| Deadline DEV           | `TOMORROW`   |
+| Deadline PROD          | `YESTERDAY`  |
 
 
 ## INFORMATIONS
@@ -30,7 +30,8 @@ Personal template first init
 
 | TECHNO   | SPEC   |
 | :------- | ------ |
-| FRONTEND | `SASS` |
+| FRONTEND | `SASS` `REACT`|
+| BACKEND | `VITE` `BUN` |
 
 ## RUNNING THE APPS
 
