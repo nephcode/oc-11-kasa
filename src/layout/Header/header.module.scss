@@ -1,3 +1,47 @@
-h1 {
-    color: red;
+@use '../../sass/colors';
+@use '../../sass/typo';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+
+    .logo {
+        width: 100px;
+    }
+
+    .svglogo path {
+        fill: red;
+    }
+}
+
+ul {
+    list-style: none;
+
+    li {
+        color: colors.$colorTypoBlack;
+        display: inline;
+        margin: 0 10px;
+
+        a {
+            color: colors.$colorTypoBlack;
+            text-decoration: none;
+
+            &:active {
+                color: colors.$colorMain;
+                text-decoration: underline;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        max-width: 1440px;
+    }
 }

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/typo.scss","footer.module.scss","../../sass/colors.scss"],"names":[],"mappings":"AAGQ;ACAR;EACI;EACA;EACA;EACA;EACA;EACA,OCgBc;EDfd,kBCDe;EDEf;EACA;EACA;EACA;;;AAIJ;EACI;EACA","file":"footer.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/typo.scss","footer.module.scss","../../sass/colors.scss"],"names":[],"mappings":"AAGQ;ACAR;EACI;EACA;EACA;EACA;EACA,OCiBc;EDhBd;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAGJ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA","file":"footer.module.css"}

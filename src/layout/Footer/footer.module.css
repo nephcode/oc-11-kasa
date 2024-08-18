@@ -2,18 +2,25 @@
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90px;
+  height: 120px;
   color: #ffffff;
   background-color: #000000;
-  height: 100px;
   bottom: 0;
   position: fixed;
   width: 100%;
+  font-size: 1rem;
 }
-
-.logo {
+footer p {
+  margin-top: 5px 0px;
+}
+footer .logo {
   margin-top: 10px;
-  max-width: 250px;
+  width: 150px;
+  max-width: 150px;
+}
+footer .logo img {
+  margin-top: 10px;
+  width: 150px;
+  max-width: 150px;
 }/*# sourceMappingURL=footer.module.css.map */

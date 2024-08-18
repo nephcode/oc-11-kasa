@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header />
     <Routes>
       <Route path="/" element={<Home />} /> 
-      <Route path='/About' element={<About />} /> 
+      <Route path='/about' element={<About />} /> 
       <Route path='/property/:id' element={<Property />} />
       <Route path='/*' element={<NotFound />} />
     </Routes>

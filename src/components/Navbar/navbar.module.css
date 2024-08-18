@@ -1,0 +1,11 @@
+@charset "UTF-8";
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active-link {
+  text-decoration: underline;
+  color: red;
+  /* Optionnel : changer la couleur pour plus de visibilité */
+}/*# sourceMappingURL=navbar.module.css.map */

@@ -4,19 +4,29 @@
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 120px;
     color: colors.$colorTypoWhite;
     background-color: colors.$backgroundFooter;
-    height: 100px;
     bottom: 0;
     position: fixed;
     width: 100%;
+    font-size: 1rem;
 
-}
+    p {
+        margin-top: 5px 0px;
+    }
 
-.logo {
-    margin-top: 10px;
-    max-width: 250px;
+    .logo {
+        margin-top: 10px;
+        width: 150px;
+        max-width: 150px;
+
+        img {
+            margin-top: 10px;
+            width: 150px;
+            max-width: 150px;
+        }
+    }
+
 }
