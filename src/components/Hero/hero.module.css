@@ -5,4 +5,10 @@
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hero img {
+  aspect-ratio: 21/9;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
 }/*# sourceMappingURL=hero.module.css.map */

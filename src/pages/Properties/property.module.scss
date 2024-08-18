@@ -1,8 +1,8 @@
 @use "../../sass/global";
-@use "../../sass/typo";
 @use "../../sass/colors";
+@use "../../sass/typo";
 
-.pageAbout {
+.pageProperty {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,4 +37,10 @@
             }
         }
     }
+
+    .view {
+        font-size: 2.5rem;
+        color: colors.$colorMain;
+    }
+
 }

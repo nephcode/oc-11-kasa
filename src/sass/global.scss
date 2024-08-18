@@ -4,7 +4,11 @@
 @use "./colors.scss";
 @use "./typo.scss";
 
+$mainPadding: 5px;
+$mainWidth: 1240px;
+
 :root {
+    font-size: typo.$fontSizeRoot;
     color-scheme: light dark;
 }
 
@@ -17,22 +21,23 @@
 
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-family: typo.$fontDefault;
     margin: 0;
-    min-height: 100vh;
     background: colors.$backgroundSite;
+    font-family: typo.$fontDefault;
     // DARL MODE & LIGHT MODE 
     //color: light-dark(colors.$backgroundSiteLight, colors.$backgroundSiteDark);
     //background-color: light-dark(colors.$backgroundSiteLight, colors.$backgroundSiteDark);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
 
     max-width: 1240px;
     font-family: typo.$fontDefault;
-    margin: 0 20px 50px;
+    margin: 0 auto 50px;
 }

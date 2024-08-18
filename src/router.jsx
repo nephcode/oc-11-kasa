@@ -13,7 +13,7 @@ import Footer from './layout/Footer'
 // PAGES ====================================== //
 import Home from './pages/Home'
 import About from './pages/About'
-import Property from './pages/Property'
+import Property from './pages/Properties'
 import NotFound from './pages/Error'
 
 // RENDER ===================================== //

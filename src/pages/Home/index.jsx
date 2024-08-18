@@ -1,35 +1,23 @@
+// IMPORTS ========================================= //
 import { useState } from 'react'
-import reactLogo from '../../assets/images/react.svg'
-import viteLogo from '/vite.svg'
-import './home.scss'
+import { Link } from 'react-router-dom'
+// COMPONENTS IMPORT =============================== //
+import Hero from '../../components/Hero'
 
-function Home() {
-  const [count, setCount] = useState(0)
+// STYLES IMPORT =================================== //
+import scss from './home.module.scss';
 
-  return (
-    <main>
-      <main>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </main>
-      <h1>Kaza</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+// REACT COMPONENT ================================= //
+const Home = () => {
+    return (
+    <main className={scss.pageHome}>
+      <Hero />
+      <h1>KAZA</h1>
+      <p><Link to="/property/10">Lien de démo non Dynamique "Propriété 10"</Link></p>
+      <p>Underconstruction</p>
+
     </main>
   )
 }
-
 export default Home
+// END OF FILE ==================================== //

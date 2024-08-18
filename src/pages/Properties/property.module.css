@@ -28,7 +28,7 @@ main {
   margin: 0 auto 50px;
 }
 
-.pageAbout {
+.pageProperty {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,22 +41,26 @@ main {
   font-size: 1.2rem;
   text-align: center;
 }
-.pageAbout img {
+.pageProperty img {
   width: 100%;
   border-radius: 10px;
 }
-.pageAbout p {
+.pageProperty p {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   color: #FF6060;
 }
-.pageAbout p a {
+.pageProperty p a {
   color: #000000;
   text-decoration: none;
   margin-left: 10px;
 }
-.pageAbout p a:visited {
+.pageProperty p a:visited {
   color: #000000;
-}/*# sourceMappingURL=about.module.css.map */
+}
+.pageProperty .view {
+  font-size: 2.5rem;
+  color: #FF6060;
+}/*# sourceMappingURL=property.module.css.map */

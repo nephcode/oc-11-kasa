@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  font-size: 16px;
   color-scheme: light dark;
 }
 
@@ -28,35 +27,35 @@ main {
   margin: 0 auto 50px;
 }
 
-.pageAbout {
+.pageHome {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 5px;
+  padding: 20px;
   background-color: #ffffff;
   color: #000000;
   font-family: "Montserrat";
   font-size: 1.2rem;
   text-align: center;
 }
-.pageAbout img {
+.pageHome img {
   width: 100%;
   border-radius: 10px;
 }
-.pageAbout p {
+.pageHome p {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   color: #FF6060;
 }
-.pageAbout p a {
+.pageHome p a {
   color: #000000;
   text-decoration: none;
   margin-left: 10px;
 }
-.pageAbout p a:visited {
+.pageHome p a:visited {
   color: #000000;
-}/*# sourceMappingURL=about.module.css.map */
+}/*# sourceMappingURL=home.module.css.map */
