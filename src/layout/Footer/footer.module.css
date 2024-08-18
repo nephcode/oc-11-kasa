@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  color: #ffffff;
+  background-color: #000000;
+  height: 100px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  margin-top: 10px;
+  max-width: 250px;
+}/*# sourceMappingURL=footer.module.css.map */

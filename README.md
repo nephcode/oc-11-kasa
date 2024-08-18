@@ -8,45 +8,39 @@ APP REACT ROUTER WITH BUN
 
 ## PROJECT DELIVERIES
 
-| WHAT FOR               | WHEN         |
-| :--------------------- | ------------ |
-| Deadline DEV           | `TOMORROW`   |
-| Deadline PROD          | `YESTERDAY`  |
-
+| WHAT FOR      | WHEN         |
+| :------------ | ------------ |
+| Deadline DEV  | `2024-08-23` |
+| Deadline PREZ | `2024-08-27` |
 
 ## INFORMATIONS
 
-| WHERE     | URL                                    |
-| :-------- | -------------------------------------- |
-| Discord   | [#](#)                                 |
-| Instagram | [https://www.instagram.com/](#)        |
-| www       | [#underconstution](#underconstruction) |
-
-| WHO IS   | FOR             |      COMPANY      | CONTACT | DISCORD |
-| :------- | --------------- | :---------------: | ------- | :-----: |
-| Nephelim | Head of concept | Underconstruction | #       |   YES   |
+| WHO IS   | FOR            |  PROJECT   | CONTACT | DISCORD |
+| :------- | -------------- | :--------: | ------- | :-----: |
+| Nephelim | Openclassrooms | Project 11 | #       |   YES   |
 
 ## TECHNO
 
-| TECHNO   | SPEC   |
-| :------- | ------ |
-| FRONTEND | `SASS` `REACT`|
-| BACKEND | `VITE` `BUN` |
+| TECHNO   | SPEC           |
+| :------- | -------------- |
+| FRONTEND | `SASS` `REACT` |
+| BACKEND  | `VITE` `BUN`   |
+
+## COURSES
+
+| COURSES     | URL                                                                                                              |
+| :---------- | ---------------------------------------------------------------------------------------------------------------- |
+| React Intro | [Débutez avec React](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react)                           |
+| React App   | [React Application Complète](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete) |
 
 ## RUNNING THE APP
 
-Install vite with **BUN**
+Install vite with **BUN** or **YARN**
+
 ```
 bun create vite
 ```
 
-
-Create branch
-
-```
-git branch dev
-git branch release
-
-```
+> > Git Action works with **Bun**
 
 ![Cover](https://kpkfzczpavanzocxzyta.supabase.co/storage/v1/object/public/oc-react/readme-footer-oc-react-11.png)

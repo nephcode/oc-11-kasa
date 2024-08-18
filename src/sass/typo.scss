@@ -1,13 +1,18 @@
-//============================================= OC-11 KASA ===========//
+//============================================= OC-11 KAZA ===========//
 // COLORS ============================================================//
-//==================================== By NEPHELIM ============ 2024 =//
+//==================================== By N. ================= 2024 ==//
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$fontDefault : "Montserrat";
+$fontSizeDefault : 1.0rem;
+$fontSizeTitle : 1.2rem;
 
 // Colors Global -- --------------------------------------------------//
 $backgroundSite: #ffffff !default;
 $backgroundSiteLight: #ffffff !default;
 $backgroundSiteDark: #353535 !default;
 
-$backgroundFooter: #000000 !default;
+$backgroundFooter: #353535 !default;
 $backgroundGlobalElement: #9356dc !default;
 $colorGreyBackground : #FAFAFA;
 

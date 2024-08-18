@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["home.scss"],"names":[],"mappings":"AAAA;EACI;IACI","file":"home.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/typo.scss","home.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EAEA;EACA;;ACJJ;EACI;IACI;;;AAKR;EACI;IACI","file":"home.css"}
