@@ -7,7 +7,7 @@ footer {
   color: #ffffff;
   background-color: #000000;
   bottom: 0;
-  position: fixed;
+  position: sticky;
   width: 100%;
   font-size: 1rem;
 }

@@ -9,7 +9,7 @@ footer {
     color: colors.$colorTypoWhite;
     background-color: colors.$backgroundFooter;
     bottom: 0;
-    position: fixed;
+    position: sticky;
     width: 100%;
     font-size: 1rem;
 
