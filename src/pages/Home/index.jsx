@@ -24,12 +24,12 @@ const Home = () => {
       <section className={scss.HostingHome}>
         {hosting.map(({ cover, title, id }) => (
           <div className={scss.HostingHome__saperlipopette}>
-            <Link to={`/property/${id}`}>
-              <figure>
+            <figure>
+              <Link to={`/property/${id}`}>
                 <img src={cover} alt={title} />
                 <figcaption>{title}</figcaption>
-              </figure>
-            </Link>
+              </Link>
+            </figure>
           </div>
           ))}
   

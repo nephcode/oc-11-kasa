@@ -16,6 +16,8 @@ const Property = () => {
     >
       <h1 className={scss.view}>Property {id}</h1>
       <div className={scss.view}>Property {id}</div>
+
+      
     </main>
   );
 };
