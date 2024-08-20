@@ -18,7 +18,7 @@ const Home = () => {
       <Hero>Chez vous, partout et ailleurs</Hero>      
       <section className={scss.HostingHome}>
         {hosting.map(({ cover, title, id }) => (
-          <div className={scss.HostingHome__saperlipopette}>
+        <div key={id} className={scss.HostingHome__saperlipopette}>
             <figure>
               <Link to={`/property/${id}`}>
                 <img src={cover} alt={title} />

@@ -3,16 +3,17 @@
 
 footer {
     display: flex;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
     flex-direction: column;
     align-items: center;
     height: 120px;
     color: colors.$colorTypoWhite;
     background-color: colors.$backgroundFooter;
-    bottom: 0;
-    position: sticky;
     width: 100%;
     font-size: 1rem;
-    z-index: 1000;
+
 
     p {
         color: colors.$colorTypoWhite;

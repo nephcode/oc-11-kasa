@@ -1,0 +1,90 @@
+@use "../../sass/global";
+@use "../../sass/typo";
+@use "../../sass/colors";
+
+details {
+    width: 100%;
+    background-color: none;
+    border-radius: 5px;
+    border: 0px;
+    margin: 10px 0px;
+    padding: 5px;
+    transition: max-height 0.3s ease;
+
+    summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        cursor: pointer;
+        background-color: colors.$colorMain;
+        color: typo.$colorTypoWhite;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 5px 10px 5px;
+        z-index: 2;
+
+        &__customMarker {
+            transition: transform 0.3s ease;
+        }
+    }
+
+    p {
+        position: relative;
+        top: -10px;
+        height: 100%;
+        margin: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 5px;
+        justify-content: start;
+        text-align: left;
+        color: typo.$colorTypoBlack !important;
+        background-color: colors.$backgroundCard;
+        z-index: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &[open] {
+        summary {
+            padding: 5px 10px 15px;
+
+            &__customMarker {
+                transform: rotate(-180deg);
+            }
+        }
+
+        p {
+            max-height: 1000px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    details {
+        width: 80%;
+
+        summary {
+            font-size: 1.3rem;
+        }
+
+        &[open] summary {
+            p {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@keyframes details-show {
+    from {
+        opacity: 0;
+        transform: var(--details-translate, translateY(-5px));
+    }
+}
+
+details[open]>*:not(summary) {
+    animation: details-show 300ms ease-in-out;
+}

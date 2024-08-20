@@ -14,15 +14,18 @@ body {
   margin: 0;
   background: #ffffff;
   font-family: "Montserrat";
+  height: 100%;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100%;
 }
 
 main {
+  flex: 1;
   max-width: 1240px;
   font-family: "Montserrat";
   margin: 0 auto 50px;
@@ -30,6 +33,7 @@ main {
 
 .pageAbout {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -40,23 +44,4 @@ main {
   font-family: "Montserrat";
   font-size: 1.2rem;
   text-align: center;
-}
-.pageAbout img {
-  width: 100%;
-  border-radius: 10px;
-}
-.pageAbout p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  color: #FF6060;
-}
-.pageAbout p a {
-  color: #000000;
-  text-decoration: none;
-  margin-left: 10px;
-}
-.pageAbout p a:visited {
-  color: #000000;
 }/*# sourceMappingURL=about.module.css.map */

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  font-size: 16px;
+  /*color-scheme: light dark;*/
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: "Montserrat";
+  color: #000;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+  max-width: 1240px;
+  font-family: "Montserrat";
+  margin: 0 auto 50px;
+}
+
+details {
+  width: 100%;
+  background-color: none;
+  border-radius: 5px;
+  border: 0px;
+  margin: 10px 0px;
+  padding: 5px;
+  transition: max-height 0.3s ease;
+}
+details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  background-color: #FF6060;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 5px 10px 5px;
+  z-index: 2;
+}
+details summary__customMarker {
+  transition: transform 0.3s ease;
+}
+details p {
+  position: relative;
+  top: -10px;
+  height: 100%;
+  margin: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  justify-content: start;
+  text-align: left;
+  color: #000000 !important;
+  background-color: #F6F6F6;
+  z-index: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+details[open] summary {
+  padding: 5px 10px 15px;
+}
+details[open] summary__customMarker {
+  transform: rotate(-180deg);
+}
+details[open] p {
+  max-height: 1000px;
+}
+
+@media screen and (min-width: 768px) {
+  details {
+    width: 80%;
+  }
+  details summary {
+    font-size: 1.3rem;
+  }
+  details[open] summary p {
+    padding: 10px;
+  }
+}
+@keyframes details-show {
+  from {
+    opacity: 0;
+    transform: var(--details-translate, translateY(-5px));
+  }
+}
+details[open] > *:not(summary) {
+  animation: details-show 300ms ease-in-out;
+}/*# sourceMappingURL=details.module.css.map */
