@@ -43,9 +43,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     background-color: colors.$backgroundSiteDark;
-    border-radius: 10px;
-    grid-gap: 2rem;
-    padding: 1rem;
+    border-radius: 25px;
+    grid-gap: 2.3rem;
+    padding: 2vw;
+    margin: 2rem 0rem;
 
     &__saperlipopette {
         aspect-ratio: 1/1;

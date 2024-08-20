@@ -15,12 +15,7 @@ import scss from './home.module.scss';
 const Home = () => {
     return (
     <main className={scss.pageHome}>
-      <Hero />
-      <h1>KAZA</h1>
-      <h1 className="home_title">Chez vous, partout et ailleurs</h1>
-      <p><Link to="/property/c67ab8a7">Lien de démo non Dynamique "c67ab8a7"</Link></p>
-      <p><Link to="/zfozeoirjji">Lien de démo page 404 "zfozeoirjji"</Link></p>
-      <p>Underconstruction</p>
+      <Hero>Chez vous, partout et ailleurs</Hero>      
       <section className={scss.HostingHome}>
         {hosting.map(({ cover, title, id }) => (
           <div className={scss.HostingHome__saperlipopette}>
