@@ -1,7 +1,9 @@
 // COMPONENTS IMPORT =============================== //
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-
+import Details from "../../components/Details";
+import Rating from "../../components/Rating";
+import Slider from "../../components/Gallery";
 // DATA IMPORT ===================================== //
 import data from "../../../public/data/logements.json";
 
@@ -29,13 +31,22 @@ const Property = () => {
 
   return (
     <main className={scss.pageProperty}>
+       <Slider pictures={pictures} />
       <h1 className={scss.view}>{title}</h1>
       <div className={scss.host}>
             <span>{host.name}</span>
             <img src={host.picture} alt={title} />
       </div>
       <div className={scss.view}>{location}</div>
-      <div className={scss.view}>{description}</div>
+      <div className={scss.view}>
+        <Details summaryContent={"Description"} detailsContent={description} />
+        <Details summaryContent={"Equipement"} detailsContent={
+          <ul>
+          {equipments.map((equipment, index) => (
+           <li key={index}>{equipment}</li>
+        ))}
+        </ul> } />
+      </div>
       <div className={scss.host}>
         <ul>
           {tags.map((tags, index) => (
@@ -43,17 +54,13 @@ const Property = () => {
           ))}
         </ul>
       </div>
-      <div className={scss.view}>{rating}</div>
+      <div className={scss.view}><Rating element={rating} /></div>
       <div>
         {pictures.map((picture, index) => (
           <img key={index} src={picture} alt={title} />
         ))}
       </div>
-      <div>
-        {equipments.map((equipment, index) => (
-          <div key={index}>{equipment}</div>
-        ))}
-      </div>
+     
     </main>
   );
 };

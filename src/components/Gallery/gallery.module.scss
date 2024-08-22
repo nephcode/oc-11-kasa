@@ -1,0 +1,38 @@
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow:first-of-type {
+    left: 10px;
+}
+
+.arrow:last-of-type {
+    right: 10px;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.counter {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
