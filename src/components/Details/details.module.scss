@@ -3,6 +3,7 @@
 @use "../../sass/colors";
 
 details {
+    min-width: 50%;
     width: 100%;
     background-color: none;
     border-radius: 5px;
@@ -27,6 +28,10 @@ details {
 
         &__customMarker {
             transition: transform 0.3s ease;
+        }
+
+        span:last-of-type {
+            padding: 10px;
         }
     }
 
@@ -54,6 +59,8 @@ details {
             &__customMarker {
                 transform: rotate(-180deg);
             }
+
+
         }
 
         p {

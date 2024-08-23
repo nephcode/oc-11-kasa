@@ -1,32 +1,25 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import "./navbar.module.scss";
+import { NavLink } from "react-router-dom";
+import scss from "./navbar.module.scss";
 
-const NavBar = () => {
-  const location = useLocation();
-
+const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link
-            to="/"
-            className={location.pathname === "/" ? "active-link" : ""}
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/about"
-            className={location.pathname === "/about" ? "active-link" : ""}
-          >
-            About
-          </Link>
-        </li>
-      </ul>
+    <nav className={scss.nav}>
+      <NavLink
+        exact="true"
+        to="/"
+        className={({ isActive }) => (isActive ? scss["active-link"] : "")}
+      >
+        Accueil
+      </NavLink>&nbsp; 
+      <NavLink
+        to="/about"
+        className={({ isActive }) => (isActive ? scss["active-link"] : "")}
+      >
+         À propos
+      </NavLink>
     </nav>
   );
-}
+};
 
-export default NavBar;
+export default Navbar;

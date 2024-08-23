@@ -1,0 +1,11 @@
+.rating {
+  height: 1rem;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.ratingStarGood {
+  color: #FF6060;
+}
+.ratingStarBad {
+  color: #E3E3E3;
+}/*# sourceMappingURL=rating.module.css.map */

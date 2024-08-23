@@ -6,6 +6,6 @@ nav a {
 
 nav a.active-link {
   text-decoration: underline;
-  color: red;
+  color: black;
   /* Optionnel : changer la couleur pour plus de visibilité */
 }/*# sourceMappingURL=navbar.module.css.map */

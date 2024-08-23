@@ -2,45 +2,126 @@
 @use "../../sass/colors";
 @use "../../sass/typo";
 
-.pageProperty {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: global.$mainPadding;
-    background-color: colors.$backgroundSite;
-    color: colors.$colorTypoBlack;
-    font-family: typo.$fontDefault;
-    font-size: 1.2rem;
-    text-align: center;
+main {
+    margin: auto;
 
-    img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .info {
+        display: grid;
+        grid-template-areas:
+            "home host"
+            "detail detail";
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0px;
+        background-color: colors.$backgroundSite;
+        color: colors.$colorTypoBlack;
+        font-family: typo.$fontDefault;
         font-size: 1.2rem;
-        color: colors.$colorMain;
+        text-align: center;
 
-        a {
-            color: typo.$colorTypoBlack;
-            text-decoration: none;
-            margin-left: 10px;
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
 
-            &:visited {
-                color: typo.$colorTypoBlack;
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            font-size: 1.2rem;
+            color: colors.$colorMain;
+
+            .h1property {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: colors.$colorMain;
+                text-align: left;
+                margin: 0px;
+            }
+
+            .pin {
+                margin: 5px 0px 15px;
+                font-size: 1rem;
+                color: colors.$colorTypoBlack;
+                text-align: left;
             }
         }
-    }
 
-    .view {
-        font-size: 2.5rem;
-        color: colors.$colorMain;
-    }
+        .host {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: end;
+            font-size: 1.2rem;
+            color: colors.$colorMain;
 
+            .profil {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: start;
+                min-width: 100%;
+
+                p {
+                    max-width: 50%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    margin: 0px 10px 0px 0px;
+                    font-size: 1rem;
+                    text-align: right;
+                }
+
+                img {
+                    display: block;
+                    width: 70px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: colors.$colorMain;
+
+            a {
+                color: typo.$colorTypoBlack;
+                text-decoration: none;
+                margin-left: 10px;
+
+                &:visited {
+                    color: typo.$colorTypoBlack;
+                }
+            }
+        }
+
+        .view {
+            font-size: 2.5rem;
+            color: colors.$colorMain;
+        }
+
+        .profil {
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        .detail {
+            display: grid;
+            grid-template-columns: 1fr; // Par défaut, une colonne pour les écrans mobiles
+
+
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr; // Deux colonnes pour les écrans de bureau
+            }
+        }
+
+        &__saperlipopette {
+            aspect-ratio: 1/1;
+        }
+    }
 }

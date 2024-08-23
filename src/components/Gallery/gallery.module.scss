@@ -1,25 +1,36 @@
+@use "../../sass/colors.scss";
+
 .slider {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+
+    img {
+        aspect-ratio: 21/9;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 25px;
+    }
+
 }
 
 .arrow {
     cursor: pointer;
-    font-size: 2rem;
-    color: #333;
+    font-size: 3rem;
+    color: colors.$colorWhite;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .arrow:first-of-type {
-    left: 10px;
+    left: 2rem;
 }
 
 .arrow:last-of-type {
-    right: 10px;
+    right: 2rem;
 }
 
 .image {
@@ -29,10 +40,13 @@
 }
 
 .counter {
+    font-size: 0.8rem;
     position: absolute;
-    bottom: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
+    bottom: 3%;
+    transform: translateY(-50%);
+
 }

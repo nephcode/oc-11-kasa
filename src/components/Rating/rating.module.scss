@@ -1,0 +1,17 @@
+@use "../../sass/colors";
+
+.rating {
+    height: 1rem;
+    margin-left: 5px;
+    margin-top: 10px;
+
+
+    &StarGood {
+        color: colors.$colorMain;
+    }
+
+    &StarBad {
+        color: colors.$colorGrey;
+    }
+
+}

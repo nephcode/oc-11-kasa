@@ -1,6 +1,8 @@
 // IMPORTS ========================================= //
 import React from "react";
-import { FaStar, FaRegStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+// STYLES ========================================== //
+import scss from "./rating.module.scss";
 
 // RATING COMPONENT ================================ //
 const Rating = ({ element }) => {
@@ -8,7 +10,11 @@ const Rating = ({ element }) => {
     return (
       <div>
         {[...Array(totalStars)].map((_, index) => (
-          index < element ? <FaStar key={index} /> : <FaRegStar key={index} />
+          index < element ? (
+          <FaStar key={index} className={`${scss.rating} ${scss.ratingStarGood}`} />
+        ) : (
+          <FaStar key={index} className={`${scss.rating} ${scss.ratingStarBad}`} />
+        )
         ))}
       </div>
     );
