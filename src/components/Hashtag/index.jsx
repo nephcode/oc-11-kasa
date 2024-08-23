@@ -1,6 +1,6 @@
 // IMPORTS ========================================= //
 import React from "react";
-import scss from "./hashtag.module.scss";
+import scss from "./tag.module.scss";
 
 // COMPONENT ======================================= //
 const Hashtag = ({ tags }) => {
