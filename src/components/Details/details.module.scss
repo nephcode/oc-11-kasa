@@ -50,7 +50,7 @@ details {
 
     ul {
         list-style: none; // Masque les puces par défaut
-        padding-left: 0; // Supprime le padding gauche par défaut
+        padding-left: 30px; // Supprime le padding gauche par défaut
 
         li {
             position: relative; // Nécessaire pour positionner le ::before
