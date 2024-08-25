@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["rating.module.scss","../../sass/colors.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;;AAGA;EACI,OCKK;;ADFT;EACI,OCMK","file":"rating.module.css"}
+{"version":3,"sourceRoot":"","sources":["rating.module.scss","../../sass/colors.module.scss"],"names":[],"mappings":"AAEA;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI,OCEC;;ADCL;EACI,OCGC","file":"rating.module.css"}

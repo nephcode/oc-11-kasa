@@ -1,11 +1,8 @@
 //============================================= OC-11 KAZA ===========//
 // _GLOBAL ===========================================================//
 //==================================== By NEPHILIM ============ 2024 =//
-@use "./colors.scss";
-@use "./typo.scss";
-
-$mainPadding: 5px;
-$mainWidth: 1240px;
+@use "./colors.module.scss" as colors;
+@use "./typo.module.scss" as typo;
 
 :root {
     font-size: typo.$fontSizeRoot;
@@ -19,30 +16,35 @@ $mainWidth: 1240px;
     box-sizing: border-box;
 }
 
-
-
 body {
     margin: 0;
     background: colors.$backgroundSite;
     font-family: typo.$fontDefault;
-    color: #000;
+    color: colors.$colorBlack;
     min-height: 100vh;
-    // DARL MODE & LIGHT MODE 
+    // DARL MODE & LIGHT MODE
     //color: light-dark(colors.$backgroundSiteLight, colors.$backgroundSiteDark);
     //background-color: light-dark(colors.$backgroundSiteLight, colors.$backgroundSiteDark);
-}
 
-#root {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    height: 100vh;
-}
+    [id="root"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //margin: 0px auto;
+        min-height: 100vh;
 
-main {
-    flex: 1;
-    max-width: 1240px;
-    font-family: typo.$fontDefault;
-    margin: 0 auto 50px;
+        main {
+            flex: 1;
+            max-width: 1240px;
+            font-family: typo.$fontDefault;
+            //margin: 0px auto 50px;
+            padding: 0px;
+
+            @media screen and (max-width: 1240px) {
+                margin: 0px 10px;
+
+            }
+        }
+    }
 }

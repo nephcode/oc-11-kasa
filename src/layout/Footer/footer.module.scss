@@ -1,5 +1,5 @@
-@use "../../sass/typo";
-@use "../../sass/colors";
+@use "../../sass/typo.module.scss" as typo;
+@use "../../sass/colors.module.scss" as colors;
 
 footer {
     display: flex;

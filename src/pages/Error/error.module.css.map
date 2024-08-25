@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["error.module.scss","../../sass/colors.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA,OCNK;;ADQL;EACI,OCCM;EDAN;EACA;;AAEA;EACI,OCJE","file":"error.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/typo.module.scss","error.module.scss","../../sass/colors.module.scss"],"names":[],"mappings":"AAGQ;ACAR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA,OCPK;;ADSL;EACI,OCGM;EDFN;EACA;;AAEA;EACI,OCFE","file":"error.module.css"}

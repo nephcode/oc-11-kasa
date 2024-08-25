@@ -1,58 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-:root {
-  font-size: 16px;
-  /*color-scheme: light dark;*/
-  min-height: 100vh;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #ffffff;
-  font-family: "Montserrat";
-  color: #000;
-  min-height: 100vh;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  height: 100vh;
-}
-
-main {
-  flex: 1;
-  max-width: 1240px;
-  font-family: "Montserrat";
-  margin: 0 auto 50px;
-}
-
-main {
-  margin: auto;
-}
-main .info {
+.info {
   display: grid;
-  grid-template-areas: "home host" "detail detail";
+  grid-template-areas: "home host" "details details";
   grid-template-columns: 1fr 1fr;
-  margin: 10px 0px;
-  background-color: #ffffff;
-  color: #000000;
-  font-family: "Montserrat";
-  font-size: 1.2rem;
-  text-align: center;
+  margin: 10px 0px 40px;
 }
-main .info img {
-  width: 100%;
-  border-radius: 10px;
+@media screen and (max-width: 768px) {
+  .info {
+    grid-template-areas: "home" "host" "details";
+    grid-template-columns: 1fr;
+  }
 }
-main .info .home {
+.info .home {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -60,20 +19,31 @@ main .info .home {
   font-size: 1.2rem;
   color: #FF6060;
 }
-main .info .home .h1property {
-  font-size: 1.5rem;
+.info .home .h1property {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: clamp(0.6rem, 2.5vw, 1.5rem);
   font-weight: 400;
   color: #FF6060;
   text-align: left;
   margin: 0px;
 }
-main .info .home .pin {
+@media screen and (max-width: 768px) {
+  .info .home .h1property {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    white-space: normal;
+    text-overflow: none;
+    overflow: visible;
+  }
+}
+.info .home .pin {
   margin: 5px 0px 15px;
   font-size: 1rem;
   color: #000000;
   text-align: left;
 }
-main .info .host {
+.info .host {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -81,14 +51,21 @@ main .info .host {
   font-size: 1.2rem;
   color: #FF6060;
 }
-main .info .host .profil {
+@media screen and (max-width: 768px) {
+  .info .host {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.info .host .profil {
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: start;
   min-width: 100%;
 }
-main .info .host .profil p {
+.info .host .profil p {
   max-width: 50%;
   height: 100%;
   display: flex;
@@ -98,43 +75,24 @@ main .info .host .profil p {
   font-size: 1rem;
   text-align: right;
 }
-main .info .host .profil img {
+@media screen and (max-width: 768px) {
+  .info .host .profil p {
+    height: 100%;
+    text-align: left;
+  }
+}
+.info .host .profil img {
   display: block;
   width: 70px;
   border-radius: 50%;
 }
-main .info p {
+.info .details {
+  grid-area: details;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  color: #FF6060;
+  flex-direction: row;
 }
-main .info p a {
-  color: #000000;
-  text-decoration: none;
-  margin-left: 10px;
-}
-main .info p a:visited {
-  color: #000000;
-}
-main .info .view {
-  font-size: 2.5rem;
-  color: #FF6060;
-}
-main .info .profil {
-  width: 70px;
-  border-radius: 50%;
-}
-main .info .detail {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 768px) {
-  main .info .detail {
-    grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 768px) {
+  .info .details {
+    flex-direction: column;
   }
-}
-main .info__saperlipopette {
-  aspect-ratio: 1/1;
 }/*# sourceMappingURL=property.module.css.map */

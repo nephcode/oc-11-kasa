@@ -1,13 +1,14 @@
-@use "../../sass/global";
-@use "../../sass/typo";
-@use "../../sass/colors";
+@use "../../sass/variable.module.scss" as global;
+@use "../../sass/typo.module.scss";
+@use "../../sass/colors.module.scss";
+
 
 .pageAbout {
+    max-width: 1240px;
     display: flex;
     flex: 1;
-
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin: 0 auto;
     padding: global.$mainPadding;
@@ -17,5 +18,9 @@
     font-size: 1.2rem;
     text-align: center;
 
+    @media screen and (min-width: 768px) {
+        width: 80%;
+
+    }
 
 }

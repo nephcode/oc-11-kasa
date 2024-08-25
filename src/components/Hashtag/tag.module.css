@@ -1,0 +1,16 @@
+.tag {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.tag li {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  min-width: 100px;
+}/*# sourceMappingURL=tag.module.css.map */

@@ -1,6 +1,6 @@
-@use "../../sass/global";
-@use "../../sass/typo";
-@use "../../sass/colors";
+@use "../../sass/variable.module.scss";
+@use "../../sass/typo.module.scss";
+@use "../../sass/colors.module.scss";
 
 details {
     min-width: 50%;
@@ -26,12 +26,8 @@ details {
         padding: 5px 10px 5px;
         z-index: 2;
 
-        &__customMarker {
+        .customMarker {
             transition: transform 0.3s ease;
-        }
-
-        span:last-of-type {
-            padding: 10px;
         }
     }
 
@@ -52,35 +48,32 @@ details {
         overflow: hidden;
     }
 
+    ul {
+        list-style: none; // Masque les puces par défaut
+        padding-left: 0; // Supprime le padding gauche par défaut
+
+        li {
+            position: relative; // Nécessaire pour positionner le ::before
+
+            &::before {
+                content: "-"; // Ajoute un tiret avant chaque élément de liste
+                position: absolute; // Positionne le tiret
+                left: -20px; // Ajuste la position du tiret
+            }
+        }
+    }
+
     &[open] {
         summary {
             padding: 5px 10px 15px;
 
-            &__customMarker {
+            .customMarker {
                 transform: rotate(-180deg);
             }
-
-
         }
 
         p {
             max-height: 1000px;
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    details {
-        width: 80%;
-
-        summary {
-            font-size: 1.3rem;
-        }
-
-        &[open] summary {
-            p {
-                padding: 10px;
-            }
         }
     }
 }

@@ -1,39 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-:root {
-  font-size: 16px;
-  /*color-scheme: light dark;*/
-  min-height: 100vh;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #ffffff;
-  font-family: "Montserrat";
-  color: #000;
-  min-height: 100vh;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  height: 100vh;
-}
-
-main {
-  flex: 1;
-  max-width: 1240px;
-  font-family: "Montserrat";
-  margin: 0 auto 50px;
-}
-
 details {
   min-width: 50%;
   width: 100%;
@@ -58,11 +23,8 @@ details summary {
   padding: 5px 10px 5px;
   z-index: 2;
 }
-details summary__customMarker {
+details summary .customMarker {
   transition: transform 0.3s ease;
-}
-details summary span:last-of-type {
-  padding: 10px;
 }
 details p {
   position: relative;
@@ -80,27 +42,28 @@ details p {
   max-height: 0;
   overflow: hidden;
 }
+details ul {
+  list-style: none;
+  padding-left: 0;
+}
+details ul li {
+  position: relative;
+}
+details ul li::before {
+  content: "-";
+  position: absolute;
+  left: -20px;
+}
 details[open] summary {
   padding: 5px 10px 15px;
 }
-details[open] summary__customMarker {
+details[open] summary .customMarker {
   transform: rotate(-180deg);
 }
 details[open] p {
   max-height: 1000px;
 }
 
-@media screen and (min-width: 768px) {
-  details {
-    width: 80%;
-  }
-  details summary {
-    font-size: 1.3rem;
-  }
-  details[open] summary p {
-    padding: 10px;
-  }
-}
 @keyframes details-show {
   from {
     opacity: 0;

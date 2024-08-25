@@ -6,11 +6,10 @@ import scss from "./tag.module.scss";
 const Hashtag = ({ tags }) => {
   return (
     tags.map((tags, index) => (
-    <ul className={scss.tag}>
-      <li key={index}>{tags}</li>
+    <ul key={index} className={scss.tag}>
+      <li>{tags}</li>
     </ul>
   )))
 };
-
 export default Hashtag;
 // END OF FILE ==================================== //

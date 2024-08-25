@@ -15,21 +15,24 @@ body {
   margin: 0;
   background: #ffffff;
   font-family: "Montserrat";
-  color: #000;
+  color: #000000;
   min-height: 100vh;
 }
-body div[id=root] {
+body [id=root] {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px auto;
   min-height: 100vh;
 }
-body div[id=root] main {
+body [id=root] main {
   flex: 1;
   max-width: 1240px;
   font-family: "Montserrat";
-  margin: 0 auto 50px;
-  padding: 5px;
-}/*# sourceMappingURL=global.css.map */
+  padding: 0px;
+}
+@media screen and (max-width: 1240px) {
+  body [id=root] main {
+    margin: 0px 10px;
+  }
+}/*# sourceMappingURL=global.module.css.map */

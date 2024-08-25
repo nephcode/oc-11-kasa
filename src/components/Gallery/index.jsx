@@ -14,7 +14,9 @@ const Slider = ({ pictures }) => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
+    );
   };
 
   const handleTouchStart = (e) => {
@@ -34,19 +36,28 @@ const Slider = ({ pictures }) => {
   };
 
   return (
-    <div
+    <section
       className={scss.slider}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <FaAngleLeft className={scss.arrow} onClick={prevSlide} />
-      <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className={scss.image} />
-      <FaAngleRight className={scss.arrow} onClick={nextSlide} />
-      <div className={scss.counter}>
-        {currentIndex + 1} / {pictures.length}
-      </div>
-    </div>
+      {pictures.length > 1 && (
+        <>
+          <FaAngleLeft className={scss.arrow} onClick={prevSlide} />
+          <FaAngleRight className={scss.arrow} onClick={nextSlide} />
+
+          <div className={scss.counter}>
+            {currentIndex + 1} / {pictures.length}
+          </div>
+        </>
+      )}
+      <img
+        src={pictures[currentIndex]}
+        alt={`Slide ${currentIndex + 1}`}
+        className={scss.image}
+      />
+    </section>
   );
 };
 

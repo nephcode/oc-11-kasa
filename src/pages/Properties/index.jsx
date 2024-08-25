@@ -2,7 +2,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FaMapMarker } from "react-icons/fa";
-
+import NotFound from "../Error";
 import Details from "../../components/Details";
 import Rating from "../../components/Rating";
 import Slider from "../../components/Gallery";
@@ -26,7 +26,7 @@ const Property = () => {
   }, [id]);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <NotFound />;
   }
 
   const {
@@ -40,15 +40,14 @@ const Property = () => {
     rating,
   } = logement;
 
-  // HACK LAST MINUTE 
-  const [firstName, lastName] = host.name.split(' ');
-
+  // HACK LAST MINUTE
+  const [firstName, lastName] = host.name.split(" ");
 
   return (
-    <main id={`mainProperty`} className={scss.pageProperty}>
+    <main>
       <Slider pictures={pictures} />
-      <div id={`info`} className={scss.info}>
-        <div id={`home`} className={scss.home}>
+      <section className={scss.info}>
+        <div id="home" className={scss.home}>
           <h1 className={scss.h1property}>{title}</h1>
           <p className={scss.pin}>
             <FaMapMarker />
@@ -59,18 +58,23 @@ const Property = () => {
           </div>
         </div>
 
-        <div id={`host`} className={scss.host}>
+        <div id="host" className={scss.host}>
           <div className={scss.profil}>
-            <p>{firstName}<br />{lastName}</p>
-
-            <div><img src={host.picture} alt={title} /></div>
+            <div>
+            <p>
+              {firstName}
+              <br />
+              {lastName}
+            </p>
           </div>
           <div>
-            <Rating element={rating} />
+              <img src={host.picture} alt={title} />
           </div>
+          </div>
+          <Rating element={rating} />
         </div>
 
-        <div id={`detail`} className={scss.detail}>
+        <div id="details" className={scss.details}>
           <Details
             summaryContent={"Description"}
             detailsContent={description}
@@ -86,7 +90,7 @@ const Property = () => {
             }
           />
         </div>
-      </div>
+      </section>
     </main>
   );
 };

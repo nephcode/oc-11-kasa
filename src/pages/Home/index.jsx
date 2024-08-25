@@ -14,10 +14,14 @@ import scss from './home.module.scss';
 // REACT COMPONENT ================================= //
 const Home = () => {
     return (
-    <main className={scss.pageHome}>
-      <Hero>Chez vous, partout et ailleurs</Hero>      
-      <section className={scss.HostingHome}>
-        {hosting.map(({ cover, title, id }) => (
+
+    
+      <main>
+        <Hero>Chez vous, partout et ailleurs</Hero>   
+       
+      <section className={scss.HostingHome}>  
+       
+      {hosting.map(({ cover, title, id }) => (
         <div key={id} className={scss.HostingHome__saperlipopette}>
             <figure>
               <Link to={`/property/${id}`}>
@@ -27,9 +31,9 @@ const Home = () => {
             </figure>
           </div>
           ))}
-  
-      </section>
-    </main>
+        </section>
+        </main> 
+ 
   )
 }
 export default Home

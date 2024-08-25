@@ -6,6 +6,8 @@
 
 APP REACT ROUTER WITH BUN
 
+Dernier commit : `{{ commit.message }}` par `{{ commit.author }}` le `{{ commit.date }}`
+
 ## PROJECT DELIVERIES
 
 | WHAT FOR      | WHEN         |

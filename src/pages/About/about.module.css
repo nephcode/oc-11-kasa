@@ -1,41 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-:root {
-  font-size: 16px;
-  color-scheme: light dark;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #ffffff;
-  font-family: "Montserrat";
-  height: 100%;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  height: 100%;
-}
-
-main {
-  flex: 1;
-  max-width: 1240px;
-  font-family: "Montserrat";
-  margin: 0 auto 50px;
-}
-
 .pageAbout {
+  max-width: 1240px;
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin: 0 auto;
   padding: 5px;
@@ -44,4 +13,9 @@ main {
   font-family: "Montserrat";
   font-size: 1.2rem;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .pageAbout {
+    width: 80%;
+  }
 }/*# sourceMappingURL=about.module.css.map */

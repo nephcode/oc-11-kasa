@@ -1,4 +1,5 @@
-@use "../../sass/colors";
+@use "../../sass/colors.module.scss";
+@use "../../sass/typo.module.scss";
 
 .pageError {
     max-width: 800px;

@@ -8,7 +8,7 @@ import scss from "./rating.module.scss";
 const Rating = ({ element }) => {
     const totalStars = 5;
     return (
-      <div>
+      <div className={scss.ratingBlock}>
         {[...Array(totalStars)].map((_, index) => (
           index < element ? (
           <FaStar key={index} className={`${scss.rating} ${scss.ratingStarGood}`} />

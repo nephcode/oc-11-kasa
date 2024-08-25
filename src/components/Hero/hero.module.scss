@@ -14,14 +14,19 @@
     }
 
     h1 {
-        width: 100%;
+        // Position NEPHA CODE
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin: 0px;
+        z-index: 1;
+        // STYLE FONT NEPHA CODE
+        font-size: clamp(1.0rem, 5vw, 3rem);
         color: white;
-        font-size: 3rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin: 0px;
+        white-space: nowrap;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }

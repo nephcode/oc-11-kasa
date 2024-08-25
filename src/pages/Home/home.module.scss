@@ -1,40 +1,21 @@
-@use "../../sass/global";
-@use "../../sass/typo";
-@use "../../sass/colors";
+@use "../../sass/variable.module.scss" as global;
+@use "../../sass/typo.module.scss";
+@use "../../sass/colors.module.scss";
 
-.pageHome {
+p {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: global.$mainPadding;
-    background-color: colors.$backgroundSite;
-    color: colors.$colorTypoBlack;
-    font-family: typo.$fontDefault;
     font-size: 1.2rem;
-    text-align: center;
+    color: colors.$colorMain;
 
-    img {
-        width: 100%;
-        border-radius: 10px;
-    }
+    a {
+        color: typo.$colorTypoBlack;
+        text-decoration: none;
+        margin-left: 10px;
 
-    p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        color: colors.$colorMain;
-
-        a {
+        &:visited {
             color: typo.$colorTypoBlack;
-            text-decoration: none;
-            margin-left: 10px;
-
-            &:visited {
-                color: typo.$colorTypoBlack;
-            }
         }
     }
 }
@@ -56,7 +37,6 @@
             position: relative;
             height: 100%;
             width: 100%;
-            background-color: colors.$colorMain;
             border-radius: 10px;
             margin: 0px;
 
@@ -86,8 +66,14 @@
                     text-shadow: 1px 1px 3px grey;
                     ;
                 }
+
             }
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        background-color: transparent;
+
     }
 
 }

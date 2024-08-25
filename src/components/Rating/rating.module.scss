@@ -1,17 +1,20 @@
-@use "../../sass/colors";
+@use "../../sass/colors.module.scss" as colors;
 
-.rating {
-    height: 1rem;
-    margin-left: 5px;
-    margin-top: 10px;
+.ratingBlock {
+    display: flex;
+    flex-direction: row;
 
+    .rating {
+        height: 1rem;
+        margin-left: 5px;
+        margin-top: 10px;
 
-    &StarGood {
-        color: colors.$colorMain;
+        &StarGood {
+            color: colors.$colorMain;
+        }
+
+        &StarBad {
+            color: colors.$colorGrey;
+        }
     }
-
-    &StarBad {
-        color: colors.$colorGrey;
-    }
-
 }
