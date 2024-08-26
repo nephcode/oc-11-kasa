@@ -16,6 +16,7 @@ import Property from "./pages/Properties";
 import NotFound from "./pages/Error";
 
 // STYLES ===================================== //
+
 import "./sass/global.module.scss";
 
 // RENDER ===================================== //

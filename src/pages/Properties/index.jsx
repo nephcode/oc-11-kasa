@@ -61,15 +61,15 @@ const Property = () => {
         <div id="host" className={scss.host}>
           <div className={scss.profil}>
             <div>
-            <p>
-              {firstName}
-              <br />
-              {lastName}
-            </p>
-          </div>
-          <div>
+              <p>
+                {firstName}
+                <br />
+                {lastName}
+              </p>
+            </div>
+            <div>
               <img src={host.picture} alt={title} />
-          </div>
+            </div>
           </div>
           <Rating element={rating} />
         </div>
@@ -77,7 +77,7 @@ const Property = () => {
         <div id="details" className={scss.details}>
           <Details
             summaryContent={"Description"}
-            detailsContent={description}
+            detailsContent={<p>{description}</p>}
           />
           <Details
             summaryContent={"Equipement"}
