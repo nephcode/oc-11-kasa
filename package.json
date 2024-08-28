@@ -28,6 +28,6 @@
     "eslint-plugin-react": "latest",
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-react-refresh": "latest",
-    "vite": "^3.2.10"
+    "vite": "^4.5.3"
   }
 }
